@@ -17,7 +17,7 @@ A list of the surveying methods refered to in the repository and the abbreviatio
 
 The second component is the output the FIS is modeling. A list of the outputs referred to in the repository and the abbreviations used to refer to them in the naming convention is listed below:
 
-* **ZError - DEM error
+* **ZError** - DEM error
 
 The third component to the naming mechanism is the input variables that are used in the FIS. Each input variable is then seperated by an underscore. A list of the input variables influencing DEM error that are refered to in the repository are listed below:
 
@@ -42,6 +42,10 @@ For example the FIS named **TS_ZError_PD_SLdeg** is an FIS used to model DEM err
 
 The FIS named **CHaMP_TS_ZError_PD_SLPdeg_SR_3DQ_IntErr** was created for the Columbia River Habitat Monitoring Program used to model DEM error in a DEM created from data collected by a total station the inputs to the FIS are point density, slope degrees, surface roughness, 3D point quality, and interpolation error.
 
+##Creating Error Surface Using FIS
 
+For more a tutorial for how to utilize an FIS to create an error surface within GCD, [follow this link].(http://gcd6help.joewheaton.org/tutorials--how-to/vii-fuzzy-inference-systems-in-gcd)
 
+##Building FIS and Contributing to Repo
 
+If you are interested in building your own FIS their is a [tutorial here](http://gcd6help.joewheaton.org/tutorials--how-to/viii-building-your-own-fis) for how to use Matlab's Fuzzy Logic Toolbox as well as helpful links, literature, and other information. If you would like to contribute a FIS to this repository please contact James Hensleigh (James.Hensleigh@usu.edu).
