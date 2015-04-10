@@ -1,5 +1,5 @@
 [System]
-Name='CHaMP_2012'
+Name='CHaMP_TS_ZError_SLPdeg_PD_2013'
 Type='mamdani'
 Version=2.0
 NumInputs=2

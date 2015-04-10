@@ -1,5 +1,5 @@
 [System]
-Name='TLS_Zerror_PD_SLPd_R_Feet'
+Name='TLS_ZError_PD_SLPdeg_SR_Feet'
 Type='mamdani'
 Version=2.0
 NumInputs=3

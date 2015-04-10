@@ -1,5 +1,5 @@
 [System]
-Name='TS_5Input_PD_SA_Rough_3DQ_IntError'
+Name='CHaMP_TS_ZError_PD_SLPdeg_SR_3DQ_IntErr'
 Type='mamdani'
 Version=2.0
 NumInputs=5

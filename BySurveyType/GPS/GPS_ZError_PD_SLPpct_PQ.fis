@@ -1,5 +1,5 @@
 [System]
-Name='ZFIS_PD_SLP_PQ'
+Name='GPS_ZError_PD_SLPpct_PQ'
 Type='mamdani'
 Version=2.0
 NumInputs=3
