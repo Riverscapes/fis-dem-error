@@ -4,7 +4,9 @@ This repository has been created to function as a database for FIS that model DE
 
 ##Naming Convention of FIS Repository
 
-Each FIS has 2 main components to how it is named the first is an abbreviation of the surveying method that was used to collect the data to create the DEM. A list of the surveying methods refered to in the repository are listed below:
+The naming convention for each FIS has 3 main components. The first is an abbreviation of the surveying method that was used to collect the data to create the DEM, the second is the output the FIS is modeling (currently all FIS in repository are modeling DEM Error aka Z error), and the input variables used in each FIS. In addition their are 3 optional components, organization FIS was developed for, linear units the FIS is developed in, and year FIS was developed. Each component of the naming mechanism is separated by an underscore _ . 
+
+A list of the surveying methods refered to in the repository and the abbreviations used to refer to them in the naming convention are listed below:
 
 * **TS** - Total Station
 * **TLS** - Terrestrial Laser Scanner
@@ -13,21 +15,33 @@ Each FIS has 2 main components to how it is named the first is an abbreviation o
 * **GreenALS** - Green Airborne Laser Scanner
 * **MBES** - Multibeam Echo Sounder
 
-The survey type represented by the abbreviations above is separated from the second component of the naming mechanism by an underscore _. The other component to the naming mechanism is the input variables that are used in the FIS. Each input variable is then seperated by an underscore. A list of the input variables influencing DEM error that are refered to in the repository are listed below:
+The second component is the output the FIS is modeling. A list of the outputs referred to in the repository and the abbreviations used to refer to them in the naming convention is listed below:
 
-**It seems that some of the FIS have Zerror between the survey type and input variables but some don't, should I add this to all of them?**
+* **ZError - DEM error
+
+The third component to the naming mechanism is the input variables that are used in the FIS. Each input variable is then seperated by an underscore. A list of the input variables influencing DEM error that are refered to in the repository are listed below:
 
 * **PD** - Point Density
-* **SA** - ? Slope Analysis - This is used in the most recent FIS created for CHaMP **I propose this is changed to SL for slope that is appended by deg or pct for degrees or percent** as it is in the other FIS
 * **3DQ** - 3D Point Quality
 * **PQ** - Point Quality
 * **SR** - Surface Roughness
+* **SLP** - Slope
+--* deg for slope in degrees
+--* pct for slope in percent rise
 * **IntErr** - Interpolation Error
 * **Veg** - Vegetation
-* **WD** - ?
+* **WD** - Wet Dry
 
-**Some of these naming need to be cleaned up and the names of FIS changed so they follow this convention. Once that convention is set I will edit the names of the FIS in the repository to adhere to the naming convention.**
+The optional component of organization FIS was developed for precedes the FIS. A list of the organizations referred to in the repository and the abbreviations used to refer to them in the naming convention is listed below:
 
-For example the FIS in the repository that is named **TS_PD_SLdeg** is an FIS used to model uncertainty in a DEM created from data collected by a total station that uses point density and slope degrees as its inputs.
+* **CHaMP** - Columbia River Habitat Monitoring Program
 
-**Unless specified with a final trailing underscore and different linear unit, like _Feet. Then the FIS is in meters.**
+The optional component of linear unit and year developed trail the other naming components. **Unless specified with a final trailing underscore and different linear unit, like _Feet. Then the FIS is in meters.**
+
+For example the FIS named **TS_ZError_PD_SLdeg** is an FIS used to model DEM error in a DEM created from data collected by a total station the inputs to the FIS are point density and slope degrees.
+
+The FIS named **CHaMP_TS_ZError_PD_SLPdeg_SR_3DQ_IntErr** was created for the Columbia River Habitat Monitoring Program used to model DEM error in a DEM created from data collected by a total station the inputs to the FIS are point density, slope degrees, surface roughness, 3D point quality, and interpolation error.
+
+
+
+
