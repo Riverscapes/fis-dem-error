@@ -15,6 +15,8 @@ Each FIS has 2 main components to how it is named the first is an abbreviation o
 
 The survey type represented by the abbreviations above is separated from the second component of the naming mechanism by an underscore _. The other component to the naming mechanism is the input variables that are used in the FIS. Each input variable is then seperated by an underscore. A list of the input variables influencing DEM error that are refered to in the repository are listed below:
 
+**It seems that some of the FIS have Zerror between the survey type and input variables but some don't, should I add this to all of them?**
+
 * **PD** - Point Density
 * **SA** - ? Slope Analysis - This is used in the most recent FIS created for CHaMP **I propose this is changed to SL for slope that is appended by deg or pct for degrees or percent** as it is in the other FIS
 * **3DQ** - 3D Point Quality
