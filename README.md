@@ -26,6 +26,8 @@ The survey type represented by the abbreviations above is separated from the sec
 * **Veg** - Vegetation
 * **WD** - ?
 
+**Some of these naming need to be cleaned up and the names of FIS changed so they follow this convention. Once that convention is set I will edit the names of the FIS in the repository to adhere to the naming convention.**
+
 For example the FIS in the repository that is named **TS_PD_SLdeg** is an FIS used to model uncertainty in a DEM created from data collected by a total station that uses point density and slope degrees as its inputs.
 
 **Unless specified with a final trailing underscore and different linear unit, like _Feet. Then the FIS is in meters.**
