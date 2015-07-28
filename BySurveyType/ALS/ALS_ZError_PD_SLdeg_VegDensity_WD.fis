@@ -1,5 +1,5 @@
 [System]
-Name='BEC12_FromALSAnd14Checks_4'
+Name='ALS_ZError_PD_SLdeg_VegDensity_WD'
 Type='mamdani'
 Version=2.0
 NumInputs=4
