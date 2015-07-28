@@ -1,5 +1,5 @@
 [System]
-Name='ALS_ZError_PD_SLdeg_VegDensity_WD'
+Name='BEC12_FromALSAnd14Checks_4'
 Type='mamdani'
 Version=2.0
 NumInputs=4
@@ -15,9 +15,9 @@ DefuzzMethod='centroid'
 Name='Slope_Deg'
 Range=[0 90]
 NumMFs=3
-MF1='Low':'trapmf',[0 0 10 15]
-MF2='Medium':'trapmf',[10 15 20 25]
-MF3='High':'trapmf',[20 25 90 90]
+MF1='Low':'trapmf',[0 0 8 12]
+MF2='Medium':'trapmf',[8 12 30 45]
+MF3='High':'trapmf',[30 45 90 90]
 
 [Input2]
 Name='PointDensity'
@@ -45,12 +45,12 @@ MF2='Wet':'trapmf',[0.396 0.396 2 2]
 
 [Output1]
 Name='ElevUncertainty'
-Range=[0 50]
+Range=[0 25]
 NumMFs=4
-MF1='Low':'trapmf',[0 0 0.1 0.25]
-MF2='Average':'trapmf',[0.1 0.25 0.5 0.75]
-MF3='High':'trapmf',[0.5 0.75 1.5 2]
-MF4='Extreme':'trapmf',[1.5 2 50 50]
+MF1='Low':'trapmf',[0 0 0.05 0.2]
+MF2='Average':'trapmf',[0.05 0.2 0.3 0.5]
+MF3='High':'trapmf',[0.3 0.5 0.75 1]
+MF4='Extreme':'trapmf',[0.75 1 25 25]
 
 [Rules]
 1 1 1 1, 2 (1) : 1
