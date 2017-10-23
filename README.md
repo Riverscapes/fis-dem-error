@@ -1,12 +1,12 @@
-#Fuzzy Inference System (FIS) Repository
+# Fuzzy Inference System (FIS) Repository
 
 This repository has been created to function as a database for FIS. The FIS in this repository are shipped with the Geomorphic Change Detection (GCD) Software Version 6.X. 
 
-##Enable FIS Repository in GCD
+## Enable FIS Repository in GCD
 
 To auto load the repository to the _FIS Library_ in GCD projects make sure that the **_Autoload ET-AL provided FIS library_** is checked. This option is accesed through the _Customize_ drop-down menu on the tool bar, and clicking the _Options_ button to bring up the _Options_ form. For a video tutorial for how to do this as well as further information about the _Options_ menu [click here.](http://gcd6help.joewheaton.org/gcd-command-reference/customize-menu/options) Once the **_Autoload ET-AL provided FIS library_** option is turned on, every time a user is creating a FIS error surface they will be able to utilize the FIS in this repository. 
 
-##Naming Convention of FIS Repository
+## Naming Convention of FIS Repository
 
 The naming convention for each FIS has 3 main components. The first is an abbreviation of the surveying method that was used to collect the data to create the DEM, the second is the output the FIS is modeling (currently all FIS in repository are modeling DEM Error aka Z error), and the input variables used in each FIS. In addition their are 3 optional components, organization FIS was developed for, linear units the FIS is developed in, and year FIS was developed. Each component of the naming mechanism is separated by an underscore _ . 
 
@@ -46,10 +46,10 @@ For example the FIS named **TS_ZError_PD_SLdeg** is an FIS used to model DEM err
 
 The FIS named **CHaMP_TS_ZError_PD_SLPdeg_SR_3DQ_IntErr** was created for the Columbia River Habitat Monitoring Program used to model DEM error in a DEM created from data collected by a total station the inputs to the FIS are point density, slope degrees, surface roughness, 3D point quality, and interpolation error.
 
-##Creating Error Surface Using FIS
+## Creating Error Surface Using FIS
 
 For more a tutorial for how to utilize an FIS to create an error surface within GCD, [follow this link](http://gcd6help.joewheaton.org/tutorials--how-to/vii-fuzzy-inference-systems-in-gcd).
 
-##Building FIS and Contributing to Repo
+## Building FIS and Contributing to Repo
 
 If you are interested in building your own FIS there is a [tutorial here](http://gcd6help.joewheaton.org/tutorials--how-to/viii-building-your-own-fis) for how to use Matlab's Fuzzy Logic Toolbox as well as helpful links, literature, and other information. If you would like to contribute a FIS to this repository please contact James Hensleigh (James.Hensleigh@usu.edu).
