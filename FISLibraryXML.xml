@@ -1,4 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <FISLibrary xmlns="http://tempuri.org/FISLibrary.xsd">
-
+  <Item>
+    <Name>CHaMP_TS_ZError_SLPdeg_PD_2012</Name>
+    <FilePath>CHaMP\2012\CHaMP_TS_ZError_SLPdeg_PD_2012.fis</FilePath>
+    <Contributor>Sara Bangen</Contributor>
+    <ContributorEmail>sara.bangen@gmail.com</ContributorEmail>
+    <Organization>Utah State University</Organization>
+    <Purpose>Columbia Habitat Monitoring Program</Purpose>
+    <URL>http://champmonitoring.org</URL>
+    <SurveyMethod />
+    <Description />
+    <Inputs>
+      <Input>
+        <index>1</index>
+        <Name>Slope</Name>
+        <Units>Degrees</Units>
+        <Description />
+        <Source />        
+      </Input>
+      <Input>
+        <index>2</index>
+        <Name>Point Density</Name>
+        <Units>Points per meter squared</Units>
+        <Description />
+        <Source />
+      </Input>
+    </Inputs>
+    <Output>
+      <Name>Elevation Uncertainty</Name>
+      <Units>Meters</Units>
+      <Description />
+    </Output>
+    <Publications>
+      <Publication>
+        <Title/>
+        <URL />
+      </Publication>
+    </Publications>
+    <ExampleDatasets>
+      <ExampleDataset>
+        <Title />
+        <URL />
+      </ExampleDataset>
+    </ExampleDatasets>
+  </Item>
 </FISLibrary>
