@@ -1,25 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<FISLibrary xmlns="http://tempuri.org/FISLibrary.xsd">
+<FISLibrary>
   <Item>
     <Name>CHaMP_TS_ZError_SLPdeg_PD_2012</Name>
     <FilePath>CHaMP\2012\CHaMP_TS_ZError_SLPdeg_PD_2012.fis</FilePath>
-    <Contributor>Sara Bangen</Contributor>
-    <ContributorEmail>sara.bangen@gmail.com</ContributorEmail>
-    <Organization>Utah State University</Organization>
-    <Purpose>Columbia Habitat Monitoring Program</Purpose>
-    <URL>http://champmonitoring.org</URL>
-    <SurveyMethod />
+    <MetaData>
+      <Item>
+        <Key>Contributor</Key>
+        <Value>Sara Bangen</Value>
+      </Item>
+      <Item>
+        <Key>Contributor Email</Key>
+        <Value>sara.bangen@gmail.com</Value>
+      </Item>
+      <Item>
+        <Key>Organization</Key>
+        <Value>Utah State University</Value>
+      </Item>
+      <Item>
+        <Key>Organization</Key>
+        <Value>Utah State University</Value>
+      </Item>
+      <Item>
+        <Key>Purpose</Key>
+        <Value>Columbia Habitat Monitoring Program</Value>
+      </Item>
+      <Item>
+        <Key>URL</Key>
+        <Value>http://champmonitoring.org</Value>
+      </Item>
+    </MetaData>
     <Description />
     <Inputs>
       <Input>
-        <index>1</index>
         <Name>Slope</Name>
         <Units>Degrees</Units>
         <Description />
-        <Source />        
+        <Source />
       </Input>
       <Input>
-        <index>2</index>
         <Name>Point Density</Name>
         <Units>Points per meter squared</Units>
         <Description />
@@ -33,7 +51,7 @@
     </Output>
     <Publications>
       <Publication>
-        <Title/>
+        <Citation/>
         <URL />
       </Publication>
     </Publications>
