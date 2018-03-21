@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="FISLibrary" type="FISLibraryType"/>
+
+    <!-- Root node type-->
+    <xs:complexType name="FISLibraryType">
+        <xs:sequence>
+            <xs:element type="FISLibraryItemType" name="FISLibraryItem"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- One of these for each FIS item in the library-->
+    <xs:complexType name="FISLibraryItemType">
+        <xs:sequence>
+            <!-- All these nodes need to exist to be valid -->
+            <xs:element type="xs:string" name="Name"/>
+            <xs:element type="xs:string" name="FilePath"/>
+            <xs:element type="xs:string" name="Description"/>
+            <xs:element type="MetaDataType" name="MetaData"/>
+            <xs:element type="InputsType" name="Inputs"/>
+            <xs:element type="OutputType" name="Output"/>
+            <xs:element type="PublicationsType" name="Publications"/>
+            <xs:element type="ExampleDatasetsType" name="ExampleDatasets"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Metadata contains key/value items-->
+    <xs:complexType name="MetaDataType">
+        <xs:sequence>
+            <xs:element type="ItemType" name="Item" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Metadata Item Types-->
+    <xs:complexType name="ItemType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="Key"/>
+            <xs:element type="xs:string" name="Value"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!--FIS rule file Inputs-->
+    <xs:complexType name="InputsType">
+        <xs:sequence>
+            <xs:element type="InputType" name="Input" maxOccurs="unbounded" minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Individual FIS inputs-->
+    <xs:complexType name="InputType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="Name"/>
+            <xs:element type="xs:string" name="Units"/>
+            <xs:element type="xs:string" name="Description"/>
+            <xs:element type="xs:string" name="Source"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- FIS rule file output definition -->
+    <xs:complexType name="OutputType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="Name"/>
+            <xs:element type="xs:string" name="Units"/>
+            <xs:element type="xs:string" name="Description"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- List of Publications -->
+    <xs:complexType name="PublicationsType">
+        <xs:sequence>
+            <xs:element type="PublicationType" name="Publication" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Individual publication item-->
+    <xs:complexType name="PublicationType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="Citation"/>
+            <xs:element type="xs:string" name="URL"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- List of example datasets -->
+        <xs:complexType name="ExampleDatasetsType">
+        <xs:sequence>
+            <xs:element type="ExampleDatasetType" name="ExampleDataset"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!--Individual example dataset-->
+    <xs:complexType name="ExampleDatasetType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="Title"/>
+            <xs:element type="xs:string" name="URL"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

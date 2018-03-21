@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<FISLibrary>
-  <Item>
+<FISLibrary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				 xsi:noNamespaceSchemaLocation="FISLibrary.xsd">
+  <FISLibraryItem>
     <Name>CHaMP_TS_ZError_SLPdeg_PD_2012</Name>
     <FilePath>CHaMP\2012\CHaMP_TS_ZError_SLPdeg_PD_2012.fis</FilePath>
+    <Description />
     <MetaData>
       <Item>
         <Key>Contributor</Key>
@@ -28,8 +30,11 @@
         <Key>URL</Key>
         <Value>http://champmonitoring.org</Value>
       </Item>
+      <Item>
+        <Key />
+        <Value>test</Value>
+      </Item>
     </MetaData>
-    <Description />
     <Inputs>
       <Input>
         <Name>Slope</Name>
@@ -61,5 +66,5 @@
         <URL />
       </ExampleDataset>
     </ExampleDatasets>
-  </Item>
+  </FISLibraryItem>
 </FISLibrary>
