@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <FISLibrary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 				 xsi:noNamespaceSchemaLocation="FISLibrary.xsd">
+  <!--
+  Validate using local or remote copy by using one of the following paths
+   xsi:noNamespaceSchemaLocation="FISLibrary.xsd"
+   xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Riverscapes/fis-dem-error/master/FISLibrary.xsd"
+   -->
   <FISLibraryItem>
     <Name>CHaMP_TS_ZError_SLPdeg_PD_2012</Name>
     <FilePath>CHaMP\2012\CHaMP_TS_ZError_SLPdeg_PD_2012.fis</FilePath>
