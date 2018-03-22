@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <FISLibrary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 				 xsi:noNamespaceSchemaLocation="FISLibrary.xsd">
   <!--
@@ -24,10 +24,6 @@
         <Value>Utah State University</Value>
       </Item>
       <Item>
-        <Key>Organization</Key>
-        <Value>Utah State University</Value>
-      </Item>
-      <Item>
         <Key>Purpose</Key>
         <Value>Columbia Habitat Monitoring Program</Value>
       </Item>
@@ -36,8 +32,8 @@
         <Value>http://champmonitoring.org</Value>
       </Item>
       <Item>
-        <Key />
-        <Value>test</Value>
+        <Key>Survey Method</Key>
+        <Value>http://champmonitoring.org</Value>
       </Item>
     </MetaData>
     <Inputs>
